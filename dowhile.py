@@ -1,6 +1,7 @@
 op = False
 User = "Jaero"
 Password = "OneTwoThree"
+Failures = 0
 
 while op != True :
 
@@ -11,3 +12,6 @@ while op != True :
         op = True
     else:
         print("Usuario o contraseña incorrectos") 
+        if Failures == 3:
+            break
+    Failures += 1
